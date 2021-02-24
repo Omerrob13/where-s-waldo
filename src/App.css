@@ -1,38 +1,101 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.photo {
+  display: block;
+  margin: 0 auto;
+  height: 75vh;
+  width: 75%;
+}
+
+.target {
+  border: 1px solid red;
+  width: 15px;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Header */
+
+.title,
+.sub-title {
   text-align: center;
+  color: #3b82f6;
+  padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.error-messege {
+  background-color: red;
+  width: 120px;
+  padding: 8px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
   color: white;
+  border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.found {
+  background-color: green;
+  width: 120px;
+  padding: 8px;
+  margin: 50px auto;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* render time component */
+.save-user-container {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+}
+
+.time-header {
+  padding: 5px;
+  font-size: 20px;
+  color: rgb(243, 21, 21);
+}
+
+.user-input {
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #3b82f6;
+  border: none;
+  color: white;
+  padding: 7px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Leader board component */
+
+.reset-btn {
+  margin-bottom: 10px;
+}
+.ranks {
+  padding: 5px;
 }
